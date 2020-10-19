@@ -14,6 +14,8 @@
 		CE59718F253DC97D00565C3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE59718E253DC97D00565C3B /* Assets.xcassets */; };
 		CE597192253DC97D00565C3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE597190253DC97D00565C3B /* LaunchScreen.storyboard */; };
 		CE59719F253DCBDD00565C3B /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE59719E253DCBDD00565C3B /* Memo.swift */; };
+		CE5971A1253DD9AA00565C3B /* MemoStorageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5971A0253DD9AA00565C3B /* MemoStorageType.swift */; };
+		CE5971A5253DDAB500565C3B /* MemoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5971A4253DDAB500565C3B /* MemoryStorage.swift */; };
 		E41B607A3FD3D3BC4375F17C /* Pods_PurpleBananaMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFDC457C00F1375792A045A9 /* Pods_PurpleBananaMemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +31,8 @@
 		CE597191253DC97D00565C3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE597193253DC97D00565C3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE59719E253DCBDD00565C3B /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		CE5971A0253DD9AA00565C3B /* MemoStorageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStorageType.swift; sourceTree = "<group>"; };
+		CE5971A4253DDAB500565C3B /* MemoryStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryStorage.swift; sourceTree = "<group>"; };
 		F8696B63DD2BCE7AB5BC56DD /* Pods-PurpleBananaMemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PurpleBananaMemo.release.xcconfig"; path = "Target Support Files/Pods-PurpleBananaMemo/Pods-PurpleBananaMemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,7 +87,6 @@
 				CE597184253DC97700565C3B /* SceneDelegate.swift */,
 				CE59718E253DC97D00565C3B /* Assets.xcassets */,
 				CE597193253DC97D00565C3B /* Info.plist */,
-				CE59718B253DC97700565C3B /* PurpleBananaMemo.xcdatamodeld */,
 			);
 			path = PurpleBananaMemo;
 			sourceTree = "<group>";
@@ -115,6 +118,9 @@
 		CE59719C253DCB2200565C3B /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				CE5971A3253DDA8A00565C3B /* CoreDataStorage */,
+				CE5971A2253DDA7500565C3B /* MemoStorage */,
+				CE5971A0253DD9AA00565C3B /* MemoStorageType.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -124,6 +130,22 @@
 			children = (
 			);
 			path = Scene;
+			sourceTree = "<group>";
+		};
+		CE5971A2253DDA7500565C3B /* MemoStorage */ = {
+			isa = PBXGroup;
+			children = (
+				CE5971A4253DDAB500565C3B /* MemoryStorage.swift */,
+			);
+			path = MemoStorage;
+			sourceTree = "<group>";
+		};
+		CE5971A3253DDA8A00565C3B /* CoreDataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				CE59718B253DC97700565C3B /* PurpleBananaMemo.xcdatamodeld */,
+			);
+			path = CoreDataStorage;
 			sourceTree = "<group>";
 		};
 		E6DFCF7E6A28E42F75F30734 /* Frameworks */ = {
@@ -249,7 +271,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5971A5253DDAB500565C3B /* MemoryStorage.swift in Sources */,
 				CE59718D253DC97700565C3B /* PurpleBananaMemo.xcdatamodeld in Sources */,
+				CE5971A1253DD9AA00565C3B /* MemoStorageType.swift in Sources */,
 				CE597183253DC97700565C3B /* AppDelegate.swift in Sources */,
 				CE597185253DC97700565C3B /* SceneDelegate.swift in Sources */,
 				CE59719F253DCBDD00565C3B /* Memo.swift in Sources */,
