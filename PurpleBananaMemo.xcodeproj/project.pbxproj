@@ -13,6 +13,7 @@
 		CE59718D253DC97700565C3B /* PurpleBananaMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE59718B253DC97700565C3B /* PurpleBananaMemo.xcdatamodeld */; };
 		CE59718F253DC97D00565C3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE59718E253DC97D00565C3B /* Assets.xcassets */; };
 		CE597192253DC97D00565C3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE597190253DC97D00565C3B /* LaunchScreen.storyboard */; };
+		CE59719F253DCBDD00565C3B /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE59719E253DCBDD00565C3B /* Memo.swift */; };
 		E41B607A3FD3D3BC4375F17C /* Pods_PurpleBananaMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFDC457C00F1375792A045A9 /* Pods_PurpleBananaMemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		CE59718E253DC97D00565C3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE597191253DC97D00565C3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE597193253DC97D00565C3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE59719E253DCBDD00565C3B /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		F8696B63DD2BCE7AB5BC56DD /* Pods-PurpleBananaMemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PurpleBananaMemo.release.xcconfig"; path = "Target Support Files/Pods-PurpleBananaMemo/Pods-PurpleBananaMemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +91,7 @@
 		CE597199253DCAF200565C3B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CE59719E253DCBDD00565C3B /* Memo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				CE59718D253DC97700565C3B /* PurpleBananaMemo.xcdatamodeld in Sources */,
 				CE597183253DC97700565C3B /* AppDelegate.swift in Sources */,
 				CE597185253DC97700565C3B /* SceneDelegate.swift in Sources */,
+				CE59719F253DCBDD00565C3B /* Memo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
