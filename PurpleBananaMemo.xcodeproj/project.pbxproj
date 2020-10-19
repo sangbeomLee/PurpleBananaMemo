@@ -3,13 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		CE597183253DC97700565C3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE597182253DC97700565C3B /* AppDelegate.swift */; };
 		CE597185253DC97700565C3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE597184253DC97700565C3B /* SceneDelegate.swift */; };
-		CE597187253DC97700565C3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE597186253DC97700565C3B /* ViewController.swift */; };
 		CE59718A253DC97700565C3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE597188253DC97700565C3B /* Main.storyboard */; };
 		CE59718D253DC97700565C3B /* PurpleBananaMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE59718B253DC97700565C3B /* PurpleBananaMemo.xcdatamodeld */; };
 		CE59718F253DC97D00565C3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE59718E253DC97D00565C3B /* Assets.xcassets */; };
@@ -23,7 +22,6 @@
 		CE59717F253DC97700565C3B /* PurpleBananaMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PurpleBananaMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE597182253DC97700565C3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE597184253DC97700565C3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE597186253DC97700565C3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE597189253DC97700565C3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE59718C253DC97700565C3B /* PurpleBananaMemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PurpleBananaMemo.xcdatamodel; sourceTree = "<group>"; };
 		CE59718E253DC97D00565C3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,7 +48,6 @@
 				C2BA6AC9FB5D6FAE1FF160B9 /* Pods-PurpleBananaMemo.debug.xcconfig */,
 				F8696B63DD2BCE7AB5BC56DD /* Pods-PurpleBananaMemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -75,16 +72,55 @@
 		CE597181253DC97700565C3B /* PurpleBananaMemo */ = {
 			isa = PBXGroup;
 			children = (
+				CE59719D253DCB3500565C3B /* Scene */,
+				CE59719C253DCB2200565C3B /* Service */,
+				CE59719B253DCB1200565C3B /* ViewModel */,
+				CE59719A253DCB0400565C3B /* ViewController */,
+				CE597199253DCAF200565C3B /* Model */,
 				CE597182253DC97700565C3B /* AppDelegate.swift */,
 				CE597184253DC97700565C3B /* SceneDelegate.swift */,
-				CE597186253DC97700565C3B /* ViewController.swift */,
-				CE597188253DC97700565C3B /* Main.storyboard */,
 				CE59718E253DC97D00565C3B /* Assets.xcassets */,
-				CE597190253DC97D00565C3B /* LaunchScreen.storyboard */,
 				CE597193253DC97D00565C3B /* Info.plist */,
 				CE59718B253DC97700565C3B /* PurpleBananaMemo.xcdatamodeld */,
 			);
 			path = PurpleBananaMemo;
+			sourceTree = "<group>";
+		};
+		CE597199253DCAF200565C3B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE59719A253DCB0400565C3B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE597188253DC97700565C3B /* Main.storyboard */,
+				CE597190253DC97D00565C3B /* LaunchScreen.storyboard */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CE59719B253DCB1200565C3B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE59719C253DCB2200565C3B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CE59719D253DCB3500565C3B /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scene;
 			sourceTree = "<group>";
 		};
 		E6DFCF7E6A28E42F75F30734 /* Frameworks */ = {
@@ -211,7 +247,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE59718D253DC97700565C3B /* PurpleBananaMemo.xcdatamodeld in Sources */,
-				CE597187253DC97700565C3B /* ViewController.swift in Sources */,
 				CE597183253DC97700565C3B /* AppDelegate.swift in Sources */,
 				CE597185253DC97700565C3B /* SceneDelegate.swift in Sources */,
 			);
