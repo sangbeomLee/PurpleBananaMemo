@@ -16,6 +16,15 @@
 		CE59719F253DCBDD00565C3B /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE59719E253DCBDD00565C3B /* Memo.swift */; };
 		CE5971A1253DD9AA00565C3B /* MemoStorageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5971A0253DD9AA00565C3B /* MemoStorageType.swift */; };
 		CE5971A5253DDAB500565C3B /* MemoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5971A4253DDAB500565C3B /* MemoryStorage.swift */; };
+		CE6950C125430C3E00DC59AF /* MemoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6950C025430C3E00DC59AF /* MemoListViewController.swift */; };
+		CE6950C525430C5E00DC59AF /* MemoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6950C325430C5E00DC59AF /* MemoDetailViewController.swift */; };
+		CE6950C625430C5E00DC59AF /* MemoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE6950C425430C5E00DC59AF /* MemoDetailViewController.xib */; };
+		CE6950CD25430C9200DC59AF /* MemoComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6950CB25430C9200DC59AF /* MemoComposeViewController.swift */; };
+		CE6950CE25430C9200DC59AF /* MemoComposeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE6950CC25430C9200DC59AF /* MemoComposeViewController.xib */; };
+		CE6950D225430CA300DC59AF /* MemoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6950D125430CA300DC59AF /* MemoListViewModel.swift */; };
+		CE6950D525430CC600DC59AF /* MemoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6950D425430CC600DC59AF /* MemoDetailViewModel.swift */; };
+		CE6950D825430CE900DC59AF /* MemoComposeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6950D725430CE900DC59AF /* MemoComposeViewModel.swift */; };
+		CE6950DB25430D1400DC59AF /* ViewModelBindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6950DA25430D1400DC59AF /* ViewModelBindableType.swift */; };
 		E41B607A3FD3D3BC4375F17C /* Pods_PurpleBananaMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFDC457C00F1375792A045A9 /* Pods_PurpleBananaMemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +42,15 @@
 		CE59719E253DCBDD00565C3B /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		CE5971A0253DD9AA00565C3B /* MemoStorageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStorageType.swift; sourceTree = "<group>"; };
 		CE5971A4253DDAB500565C3B /* MemoryStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryStorage.swift; sourceTree = "<group>"; };
+		CE6950C025430C3E00DC59AF /* MemoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListViewController.swift; sourceTree = "<group>"; };
+		CE6950C325430C5E00DC59AF /* MemoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDetailViewController.swift; sourceTree = "<group>"; };
+		CE6950C425430C5E00DC59AF /* MemoDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemoDetailViewController.xib; sourceTree = "<group>"; };
+		CE6950CB25430C9200DC59AF /* MemoComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoComposeViewController.swift; sourceTree = "<group>"; };
+		CE6950CC25430C9200DC59AF /* MemoComposeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemoComposeViewController.xib; sourceTree = "<group>"; };
+		CE6950D125430CA300DC59AF /* MemoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListViewModel.swift; sourceTree = "<group>"; };
+		CE6950D425430CC600DC59AF /* MemoDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDetailViewModel.swift; sourceTree = "<group>"; };
+		CE6950D725430CE900DC59AF /* MemoComposeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoComposeViewModel.swift; sourceTree = "<group>"; };
+		CE6950DA25430D1400DC59AF /* ViewModelBindableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelBindableType.swift; sourceTree = "<group>"; };
 		F8696B63DD2BCE7AB5BC56DD /* Pods-PurpleBananaMemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PurpleBananaMemo.release.xcconfig"; path = "Target Support Files/Pods-PurpleBananaMemo/Pods-PurpleBananaMemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +122,12 @@
 			children = (
 				CE597188253DC97700565C3B /* Main.storyboard */,
 				CE597190253DC97D00565C3B /* LaunchScreen.storyboard */,
+				CE6950C025430C3E00DC59AF /* MemoListViewController.swift */,
+				CE6950C325430C5E00DC59AF /* MemoDetailViewController.swift */,
+				CE6950C425430C5E00DC59AF /* MemoDetailViewController.xib */,
+				CE6950CB25430C9200DC59AF /* MemoComposeViewController.swift */,
+				CE6950CC25430C9200DC59AF /* MemoComposeViewController.xib */,
+				CE6950DA25430D1400DC59AF /* ViewModelBindableType.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -111,6 +135,9 @@
 		CE59719B253DCB1200565C3B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				CE6950D125430CA300DC59AF /* MemoListViewModel.swift */,
+				CE6950D425430CC600DC59AF /* MemoDetailViewModel.swift */,
+				CE6950D725430CE900DC59AF /* MemoComposeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -185,7 +212,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1170;
-				LastUpgradeCheck = 1170;
+				LastUpgradeCheck = 1210;
 				ORGANIZATIONNAME = sangbeomLee;
 				TargetAttributes = {
 					CE59717E253DC97700565C3B = {
@@ -217,6 +244,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE597192253DC97D00565C3B /* LaunchScreen.storyboard in Resources */,
+				CE6950CE25430C9200DC59AF /* MemoComposeViewController.xib in Resources */,
+				CE6950C625430C5E00DC59AF /* MemoDetailViewController.xib in Resources */,
 				CE59718F253DC97D00565C3B /* Assets.xcassets in Resources */,
 				CE59718A253DC97700565C3B /* Main.storyboard in Resources */,
 			);
@@ -272,10 +301,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE5971A5253DDAB500565C3B /* MemoryStorage.swift in Sources */,
+				CE6950D825430CE900DC59AF /* MemoComposeViewModel.swift in Sources */,
+				CE6950C525430C5E00DC59AF /* MemoDetailViewController.swift in Sources */,
+				CE6950DB25430D1400DC59AF /* ViewModelBindableType.swift in Sources */,
 				CE59718D253DC97700565C3B /* PurpleBananaMemo.xcdatamodeld in Sources */,
 				CE5971A1253DD9AA00565C3B /* MemoStorageType.swift in Sources */,
 				CE597183253DC97700565C3B /* AppDelegate.swift in Sources */,
 				CE597185253DC97700565C3B /* SceneDelegate.swift in Sources */,
+				CE6950D225430CA300DC59AF /* MemoListViewModel.swift in Sources */,
+				CE6950D525430CC600DC59AF /* MemoDetailViewModel.swift in Sources */,
+				CE6950C125430C3E00DC59AF /* MemoListViewController.swift in Sources */,
+				CE6950CD25430C9200DC59AF /* MemoComposeViewController.swift in Sources */,
 				CE59719F253DCBDD00565C3B /* Memo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +364,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -352,7 +389,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -388,6 +425,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -406,7 +444,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
