@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE28EE4425486B7300C9D536 /* CommonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE28EE4325486B7300C9D536 /* CommonViewModel.swift */; };
 		CE597183253DC97700565C3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE597182253DC97700565C3B /* AppDelegate.swift */; };
 		CE597185253DC97700565C3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE597184253DC97700565C3B /* SceneDelegate.swift */; };
 		CE59718A253DC97700565C3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE597188253DC97700565C3B /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* Begin PBXFileReference section */
 		AFDC457C00F1375792A045A9 /* Pods_PurpleBananaMemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PurpleBananaMemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2BA6AC9FB5D6FAE1FF160B9 /* Pods-PurpleBananaMemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PurpleBananaMemo.debug.xcconfig"; path = "Target Support Files/Pods-PurpleBananaMemo/Pods-PurpleBananaMemo.debug.xcconfig"; sourceTree = "<group>"; };
+		CE28EE4325486B7300C9D536 /* CommonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewModel.swift; sourceTree = "<group>"; };
 		CE59717F253DC97700565C3B /* PurpleBananaMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PurpleBananaMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE597182253DC97700565C3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE597184253DC97700565C3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				CE6950D125430CA300DC59AF /* MemoListViewModel.swift */,
 				CE6950D425430CC600DC59AF /* MemoDetailViewModel.swift */,
 				CE6950D725430CE900DC59AF /* MemoComposeViewModel.swift */,
+				CE28EE4325486B7300C9D536 /* CommonViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE28EE4425486B7300C9D536 /* CommonViewModel.swift in Sources */,
 				CE5971A5253DDAB500565C3B /* MemoryStorage.swift in Sources */,
 				CE6950D825430CE900DC59AF /* MemoComposeViewModel.swift in Sources */,
 				CEEDF8CC254712DC003C7733 /* Scene.swift in Sources */,
