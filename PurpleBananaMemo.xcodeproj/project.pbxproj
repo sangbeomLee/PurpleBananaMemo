@@ -26,6 +26,7 @@
 		CE6950D525430CC600DC59AF /* MemoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6950D425430CC600DC59AF /* MemoDetailViewModel.swift */; };
 		CE6950D825430CE900DC59AF /* MemoComposeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6950D725430CE900DC59AF /* MemoComposeViewModel.swift */; };
 		CE6950DB25430D1400DC59AF /* ViewModelBindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6950DA25430D1400DC59AF /* ViewModelBindableType.swift */; };
+		CED7630A254C564C00C9DC4D /* MemoListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED76309254C564C00C9DC4D /* MemoListCollectionViewCell.swift */; };
 		CEEDF8C925471296003C7733 /* TransitionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEDF8C825471296003C7733 /* TransitionModel.swift */; };
 		CEEDF8CC254712DC003C7733 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEDF8CB254712DC003C7733 /* Scene.swift */; };
 		CEEDF8D02547155E003C7733 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEDF8CF2547155E003C7733 /* Extension.swift */; };
@@ -58,6 +59,7 @@
 		CE6950D425430CC600DC59AF /* MemoDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDetailViewModel.swift; sourceTree = "<group>"; };
 		CE6950D725430CE900DC59AF /* MemoComposeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoComposeViewModel.swift; sourceTree = "<group>"; };
 		CE6950DA25430D1400DC59AF /* ViewModelBindableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelBindableType.swift; sourceTree = "<group>"; };
+		CED76309254C564C00C9DC4D /* MemoListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListCollectionViewCell.swift; sourceTree = "<group>"; };
 		CEEDF8C825471296003C7733 /* TransitionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionModel.swift; sourceTree = "<group>"; };
 		CEEDF8CB254712DC003C7733 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
 		CEEDF8CF2547155E003C7733 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 		CE597181253DC97700565C3B /* PurpleBananaMemo */ = {
 			isa = PBXGroup;
 			children = (
+				CED76307254C54D500C9DC4D /* View */,
 				CEEDF8CE25471551003C7733 /* Extension */,
 				CE59719D253DCB3500565C3B /* Scene */,
 				CE59719C253DCB2200565C3B /* Service */,
@@ -191,6 +194,14 @@
 				CE59718B253DC97700565C3B /* PurpleBananaMemo.xcdatamodeld */,
 			);
 			path = CoreDataStorage;
+			sourceTree = "<group>";
+		};
+		CED76307254C54D500C9DC4D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CED76309254C564C00C9DC4D /* MemoListCollectionViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		CEEDF8CE25471551003C7733 /* Extension */ = {
@@ -334,6 +345,7 @@
 				CE6950DB25430D1400DC59AF /* ViewModelBindableType.swift in Sources */,
 				CE59718D253DC97700565C3B /* PurpleBananaMemo.xcdatamodeld in Sources */,
 				CE5971A1253DD9AA00565C3B /* MemoStorageType.swift in Sources */,
+				CED7630A254C564C00C9DC4D /* MemoListCollectionViewCell.swift in Sources */,
 				CEEDF8D02547155E003C7733 /* Extension.swift in Sources */,
 				CE597183253DC97700565C3B /* AppDelegate.swift in Sources */,
 				CEEDF8D62547168F003C7733 /* SceneCoordinator.swift in Sources */,

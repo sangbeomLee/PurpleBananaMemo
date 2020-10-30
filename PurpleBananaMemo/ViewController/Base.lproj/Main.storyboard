@@ -6,20 +6,103 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Memo List View Controller-->
+        <!--메모 목록-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MemoListViewController" customModule="PurpleBananaMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="oYn-Lz-rh9">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JVx-04-5Cs">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MemoListCollectionViewCell" id="K9l-lk-Dei" customClass="MemoListCollectionViewCell" customModule="PurpleBananaMemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="jo5-BN-SyU">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Vu-33-Bxa">
+                                                    <rect key="frame" x="10" y="5" width="108" height="118"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPk-TT-iXd">
+                                                            <rect key="frame" x="5" y="5" width="33" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="fPk-TT-iXd" firstAttribute="leading" secondItem="6Vu-33-Bxa" secondAttribute="leading" constant="5" id="EZZ-bd-AwF"/>
+                                                        <constraint firstItem="fPk-TT-iXd" firstAttribute="top" secondItem="6Vu-33-Bxa" secondAttribute="top" constant="5" id="X52-Lg-zCw"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="6Vu-33-Bxa" secondAttribute="bottom" constant="5" id="bki-W3-tA2"/>
+                                                <constraint firstItem="6Vu-33-Bxa" firstAttribute="top" secondItem="jo5-BN-SyU" secondAttribute="top" constant="5" id="dSH-LH-zrs"/>
+                                                <constraint firstAttribute="trailing" secondItem="6Vu-33-Bxa" secondAttribute="trailing" constant="10" id="kJ3-l9-4Ab"/>
+                                                <constraint firstItem="6Vu-33-Bxa" firstAttribute="leading" secondItem="jo5-BN-SyU" secondAttribute="leading" constant="10" id="teZ-1l-B8f"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="containerView" destination="6Vu-33-Bxa" id="pw2-k4-OnX"/>
+                                            <outlet property="titleLabel" destination="fPk-TT-iXd" id="guL-kA-EYy"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Wc-mZ-bTJ">
+                                <rect key="frame" x="294" y="742" width="100" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnB-6C-YLV">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <state key="normal" image="plus" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="rnB-6C-YLV" firstAttribute="leading" secondItem="7Wc-mZ-bTJ" secondAttribute="leading" id="5k5-TD-oJM"/>
+                                    <constraint firstAttribute="width" secondItem="7Wc-mZ-bTJ" secondAttribute="height" multiplier="1:1" id="Ogt-yn-w2H"/>
+                                    <constraint firstItem="rnB-6C-YLV" firstAttribute="top" secondItem="7Wc-mZ-bTJ" secondAttribute="top" id="gJR-ss-GcT"/>
+                                    <constraint firstAttribute="bottom" secondItem="rnB-6C-YLV" secondAttribute="bottom" id="osT-dh-HAw"/>
+                                    <constraint firstAttribute="width" constant="100" id="wyw-8y-V4c"/>
+                                    <constraint firstAttribute="trailing" secondItem="rnB-6C-YLV" secondAttribute="trailing" id="x6S-Ly-bgp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Wc-mZ-bTJ" secondAttribute="trailing" constant="20" id="CjY-t2-rLq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oYn-Lz-rh9" secondAttribute="bottom" id="HSt-Hj-LGE"/>
+                            <constraint firstItem="oYn-Lz-rh9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="WhL-0L-cUv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oYn-Lz-rh9" secondAttribute="trailing" id="fEX-ji-UbQ"/>
+                            <constraint firstItem="oYn-Lz-rh9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fHj-I4-sCW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7Wc-mZ-bTJ" secondAttribute="bottom" constant="20" id="gOc-X3-7Nq"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="lel-hl-Ezk"/>
+                    <navigationItem key="navigationItem" title="메모 목록" id="lel-hl-Ezk"/>
+                    <connections>
+                        <outlet property="addButton" destination="rnB-6C-YLV" id="0rw-yn-U1M"/>
+                        <outlet property="listCollectionView" destination="oYn-Lz-rh9" id="ftM-oc-sBI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -30,8 +113,8 @@
             <objects>
                 <navigationController storyboardIdentifier="ListNavigation" automaticallyAdjustsScrollViewInsets="NO" id="evx-7l-XYD" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vBf-yC-P9N">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="vBf-yC-P9N">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -45,8 +128,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
